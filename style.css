@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Impede barras de rolagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+ }
+ h1 {
+  position: absolute;
+  top: 0;
+  left: 750px;
+  color: #f00;
+  font-size: 40px;
+  animation: lanc 3s infinite;
+ }
+
+ @keyframes lanc {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+ }
+
+  video {
+    position: fixed; /* Fixa o vídeo na tela */
+    top: 40px;
+    left: 40px;
+    width: 95%;
+    height: 95%;
+    object-fit: cover; /* Redimensiona o vídeo para cobrir todo o espaço disponível */
+    z-index: -1; /* Coloca o vídeo atrás de outros elementos */
+  }
+
+  .sinopse {
+    top:10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 30px;
+    font-family: 'Merienda', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    animation: bounce 2s infinite;
+  }
+  a:hover {
+    background-color: pink;
+    border-radius: 10px;
+  }
+
+  content {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .encarte {
+    width: 300px;
+    height: 400px;
+    background-color: #f00;
+    border-radius: 10px;
+    padding: 20px;
+    animation: bounce 2s infinite;
+  }
+  
+  img {
+    display: block; /* Remove margens padrão e comportamento inline */
+    margin: auto; /* Centraliza a imagem na página */
+    max-width: 100%; /* Garante que a imagem não exceda a largura da página */
+    height: auto; /* Mantém a proporção original da imagem */
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  

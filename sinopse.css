@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+}
+
+.carousel {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.carousel-inner {
+    display: flex;
+}
+
+.carousel-inner img {
+    width: 800px;
+    height: auto;
+    margin-right: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+p {
+    text-align: center;
+    position: relative;
+    top: 280px;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;            
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+}
+.sinopse {
+    top:10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 33px;
+    font-family: 'Merienda', cursive;
+    font-family: 'Rubik Wet Paint', cursive;
+    animation: bounce 2s infinite;
+  }
+a:hover {
+    background-color: pink;
+    border-radius: 10px;
+  }
+
+  content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .encarte {
+    width: 300px;
+    height: 400px;
+    background-color: #f00;
+    border-radius: 10px;
+    padding: 20px;
+    animation: bounce 2s infinite;
+  }
+  
+  img {
+    display: block; /* Remove margens padrão e comportamento inline */
+    margin: auto; /* Centraliza a imagem na página */
+    max-width: 100%; /* Garante que a imagem não exceda a largura da página */
+    height: auto; /* Mantém a proporção original da imagem */
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
