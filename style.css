@@ -84,4 +84,11 @@ body {
       transform: translateY(-20px);
     }
   }
+
+  footer {
+    position: absolute;
+    font-size: 25px;
+    bottom: 8px;
+    color: white;
+  }
   
